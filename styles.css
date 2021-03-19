@@ -83,7 +83,7 @@ p {
     margin-top: 70px;
 }
 
-/* styles for featured categories */
+/* ---------------styles for featured categories---------------- */
 
 .categories {
     margin: 70px 0;
@@ -102,7 +102,8 @@ p {
     width: 100%;
 }
 
-/* styles for featured products */
+/* -------------styles for featured products------------- */
+
 .title {
     text-align: center;
     margin: 0 auto 80px;
@@ -147,7 +148,7 @@ h4 {
     transform: translateY(-10px);
 }
 
-/* styles for offer section */
+/* --------------styles for offer section------------- */
 
 .offer {
     background: radial-gradient(#fff, #ffd6d6);
@@ -161,7 +162,7 @@ small {
     color: #555;
 }
 
-/* styles for testimonial section */
+/* --------------styles for testimonial section------------- */
 
 .testimonial {
     padding-top: 100px;
@@ -196,7 +197,7 @@ small {
     font-size: 16px;
 }
 
-/* styles for brands section */
+/* -------------styles for brands section-------------- */
 
 .brands {
     margin: 100px auto;
@@ -213,7 +214,7 @@ small {
     filter: grayscale(0);
 }
 
-/* styles for footer section  */
+/* --------------styles for footer section-----------------  */
 
 .footer {
     background: #000;
@@ -268,7 +269,7 @@ ul {
 }
 
 
-/* media query for menu */
+/* --------------media query for menu------------- */
 
 @media only screen and (max-width: 800px) {
     nav ul {
@@ -377,6 +378,131 @@ input:focus {
 }
 
 
+/* ----------styles for cart page------------ */
+
+.cart-page {
+    margin: 80px auto;
+}
+table {
+    width: 100%;
+}
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+th {
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+td {
+    padding: 10px 5px;
+}
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a {
+    color: #ff523b;
+    font-size: 12px;
+}
+td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table {
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child {
+    text-align: right;
+}
+th:last-child {
+    text-align: right;
+}
+
+
+/* -------------styles for account page--------- */
+
+.account-page {
+    padding: 50px 0;
+    background: radial-gradient(#fff, #ffd6d6);
+}
+.form-container {
+    background: #fff;
+    width: 350px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.form-container span {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn {
+    display: inline-block;
+}
+.form-container form {
+    max-width: 350px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+
+}
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus {
+    outline: none;
+}
+#LoginForm {
+    left: -350px;
+}
+#RegForm {
+    left: 0px;
+}
+form a {
+    font-size: 12px;
+    text-decoration: none;
+}
+#Indicator {
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
 
 
 
@@ -400,5 +526,8 @@ input:focus {
     .single-products h1 {
         font-size: 26px;
         line-height: 35px;
+    }
+    .cart-info p {
+        display: none;
     }
 }
